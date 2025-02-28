@@ -574,7 +574,6 @@
 				</a>
 			</div>
 		{/if}
-
 		<div class="relative {$temporaryChatEnabled ? 'opacity-20' : ''}">
 			{#if $temporaryChatEnabled}
 				<div class="absolute z-40 w-full h-full flex justify-center"></div>
@@ -586,7 +585,150 @@
 				placeholder={$i18n.t('Search')}
 			/>
 		</div>
+		<Folder
+			collapsible={!search}
+			className="px-2 mt-0.5"
+			name="메뉴"
+		>
+			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+				<a
+					class="flex-grow flex space-x-3 rounded-lg px-2 py-[7px] hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+					href="https://sage-methane-06d.notion.site/18d493bea0948038b934dad6a913e5d2?pvs=4"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<div class="self-center">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="-1 -1 28 28"
+							stroke="currentColor"
+							class="size-[1.1rem]"
+							height="24"
+							width="24"
+						>
+							<path
+								d="M24,4.591V20.688l-12,3.332L0,20.688V4.591c0-.771,.339-1.496,.931-1.989,.021-.018,.047-.029,.069-.046V19.928l11,3.053,11-3.053V2.556c.022,.017,.047,.028,.069,.046,.592,.494,.931,1.219,.931,1.989ZM12,21.02l-9-2.572V3.501c0-.792,.363-1.519,.995-1.996,.633-.477,1.432-.624,2.192-.408l4.189,1.197c.679,.194,1.247,.624,1.624,1.185,.377-.561,.945-.991,1.624-1.185l4.189-1.197c.76-.217,1.56-.069,2.192,.408,.632,.477,.995,1.205,.995,1.996v14.947l-9,2.572Zm.5-1.183l7.5-2.143V3.501c0-.475-.218-.912-.597-1.198-.265-.199-.579-.303-.899-.303-.139,0-.278,.02-.416,.059l-4.19,1.197c-.823,.235-1.398,.998-1.398,1.854v14.727Zm-1-14.727c0-.857-.575-1.62-1.398-1.854l-4.189-1.197c-.457-.131-.935-.042-1.315,.244-.379,.286-.597,.723-.597,1.198v14.193l7.5,2.143V5.11Z"
+							/>
+						</svg>
+					</div>
 
+					<div class="flex self-center">
+						<div class="self-center font-medium text-sm font-primary">챗봇 활용법</div>
+					</div>
+				</a>
+			</div>
+			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+				<a
+					class="flex-grow flex space-x-3 rounded-lg px-2 py-[7px] hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+					href="https://sage-methane-06d.notion.site/18d493bea0948099ae80f6ba2d7896e6?pvs=4"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<div class="self-center">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="-1 -1 28 28"
+							stroke="currentColor"
+							class="size-[1.1rem]"
+						>
+							<path
+								d="M3.976,23.969l-.741-.561,2.845-7.588L0,11.97v-.97H7.739L9.966,3h1.068l2.227,8h7.739v.97l-6.079,3.851,2.852,7.604-.787,.544-6.486-4.928-6.523,4.929Zm6.525-6.183l5.718,4.344-2.521-6.72,5.385-3.41h-6.582l-2.001-7.189-2.001,7.189H1.917l5.384,3.41-2.507,6.687,5.707-4.311Zm11.533-9.073l-2.533-1.643-2.533,1.643-.637-.485,.809-2.702-2.137-1.722v-.739l.5-.064h2.544l1.052-3h.709l.214,.334,.935,2.666h3.044v.803l-2.137,1.722,.808,2.702-.637,.485Zm-2.533-2.835l1.767,1.146-.555-1.856,1.449-1.168h-1.915l-.745-2.126-.746,2.126h-1.915l1.449,1.168-.555,1.855,1.766-1.146Z"
+							/>
+						</svg>
+					</div>
+	
+					<div class="flex self-center">
+						<div class="self-center font-medium text-sm font-primary">사용 후기</div>
+					</div>
+				</a>
+			</div>
+			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+				<a
+					class="flex-grow flex space-x-3 rounded-lg px-2 py-[7px] hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+					href="https://sage-methane-06d.notion.site/18d493bea09480258eadfd4e3a5ebde5?pvs=4"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<div class="self-center">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="-1 -1 28 28"
+							stroke="currentColor"
+							class="size-[1.1rem]"
+							height="24"
+							width="24"
+						>
+							<path
+								d="M12,24C5.383,24,0,18.617,0,12S5.383,0,12,0s12,5.383,12,12-5.383,12-12,12ZM12,1C5.935,1,1,5.935,1,12s4.935,11,11,11,11-4.935,11-11S18.065,1,12,1Zm-2.888,18c-.946,0-1.825-.358-2.474-1.009l-1.846-1.845,3.645-3.645,2.043,2.043c1.874-.793,3.207-2.128,4.059-4.067l-2.039-2.04,3.645-3.645,1.846,1.846c.65,.648,1.008,1.527,1.008,2.473,0,4.343-5.544,9.888-9.888,9.888Zm-2.905-2.854l1.139,1.139c.46,.461,1.087,.715,1.766,.715,3.821,0,8.888-5.067,8.888-8.888,0-.679-.254-1.306-.715-1.766l-1.139-1.14-2.231,2.231,1.803,1.803-.123,.307c-.982,2.446-2.683,4.146-5.056,5.051l-.303,.115-1.799-1.799-2.231,2.231Z"
+							/>
+						</svg>
+					</div>
+	
+					<div class="flex self-center">
+						<div class="self-center font-medium text-sm font-primary">만든 사람</div>
+					</div>
+				</a>
+			</div>
+			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+				<a
+					class="flex-grow flex space-x-3 rounded-lg px-2 py-[7px] hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+					href="https://sage-methane-06d.notion.site/18d493bea094803eb6b5c3af0a14c68b?pvs=4"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<div class="self-center">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="-1 -1 28 28"
+							stroke="currentColor"
+							class="size-[1.1rem]"
+							height="24"
+							width="24"
+						>
+							<path
+								d="M8.685,18H3.5c-2.29,0-3.5-1.21-3.5-3.5v-5.188C0,4.597,3.823,.343,8.348,.022c2.602-.178,5.161,.77,7.007,2.614,1.852,1.853,2.808,4.417,2.623,7.037-.319,4.514-4.575,8.326-9.293,8.326Zm.3-17c-.188,0-.377,.007-.566,.021C4.397,1.305,1,5.102,1,9.312v5.188c0,1.729,.771,2.5,2.5,2.5h5.185c4.213,0,8.012-3.388,8.295-7.396,.165-2.331-.686-4.612-2.332-6.26-1.507-1.506-3.545-2.344-5.663-2.344Zm15.016,20.001v-4.726c0-2.698-1.424-5.354-3.717-6.93-.228-.155-.538-.098-.695,.129-.156,.228-.099,.539,.129,.695,2.025,1.393,3.283,3.731,3.283,6.105v4.726c0,1.652-1.088,1.999-2,1.999h-4.722c-2.374,0-4.714-1.258-6.107-3.283-.157-.229-.467-.285-.695-.129-.228,.156-.285,.468-.129,.695,1.578,2.293,4.233,3.717,6.932,3.717h4.722c1.851,0,3-1.149,3-2.999ZM9.5,10.75c0-.454,.23-.727,.947-1.121,1.125-.621,1.729-1.895,1.506-3.168-.212-1.21-1.205-2.202-2.413-2.413-1.627-.287-3.208,.771-3.53,2.353-.055,.271,.12,.534,.391,.59,.272,.054,.535-.119,.59-.391,.214-1.057,1.276-1.758,2.377-1.567,.802,.141,1.459,.799,1.6,1.602,.152,.867-.242,1.699-1.003,2.119-.511,.282-1.464,.806-1.464,1.997,0,.276,.224,.5,.5,.5s.5-.224,.5-.5Zm-.5,2.25c-.552,0-1,.448-1,1s.448,1,1,1,1-.448,1-1-.448-1-1-1Z"
+							/>
+						</svg>
+					</div>
+	
+					<div class="flex self-center">
+						<div class="self-center font-medium text-sm font-primary">의견 받아요</div>
+					</div>
+				</a>
+			</div>
+			<div class="px-1.5 flex justify-center text-gray-800 dark:text-gray-200">
+				<a
+					class="flex-grow flex space-x-3 rounded-lg px-2 py-[7px] hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+					href="https://sage-methane-06d.notion.site/18d493bea09480118961f325edd8a9f9?pvs=4"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<div class="self-center">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="-1 -1 28 28"
+							stroke="currentColor"
+							class="size-[1.1rem]"
+							height="24"
+							width="24"
+						>
+							<path
+								d="M11.762,24h-3.493l3.5-9H5c-.659,0-1.262-.304-1.655-.833-.393-.529-.509-1.195-.318-1.826L8.39,0h8.875l-3.5,8h5.201c.761,0,1.43,.4,1.79,1.071s.324,1.45-.097,2.084l-8.897,12.845Zm-2.031-1h1.507l8.593-12.406c.208-.314,.227-.71,.043-1.05-.183-.341-.522-.544-.909-.544h-6.73L15.735,1h-6.69L3.964,12.686c-.078,.271-.019,.613,.184,.886,.203,.272,.513,.429,.853,.429H13.231l-3.5,9Z"
+							/>
+						</svg>
+					</div>
+	
+					<div class="flex self-center">
+						<div class="self-center font-medium text-sm font-primary">업데이트</div>
+					</div>
+				</a>
+			</div>
+		</Folder>
 		<div
 			class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden {$temporaryChatEnabled
 				? 'opacity-20'

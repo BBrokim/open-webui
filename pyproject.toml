@@ -144,7 +144,7 @@ pattern = '"version":\s*"(?P<version>[^"]+)"'
 
 [tool.hatch.build.hooks.custom]  # keep this for reading hooks from `hatch_build.py`
 
-[tool.hatch.build.targets.wheel]
+[tool.hatch.build.targets.sdist]
 sources = ["backend"]
 exclude = [
     ".dockerignore",
